@@ -1,6 +1,7 @@
 .code-section {
     background-color: #F4F4F4;
     padding: 100px 0;
+    position: relative;
 }
 
 .code-layout {
@@ -64,6 +65,10 @@
 
 .code__main__img-wrapper {
     grid-area: img;
+    background-image: url(../../../build/img/backgrounds/code.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: flex-start;
 }
 
 .code__img {
