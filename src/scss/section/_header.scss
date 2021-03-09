@@ -1,11 +1,49 @@
-.hero__bg{
- background-image: url("/build/img/backgrounds/header.png");
-  background-position: center center;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.revol__github {
+    display: flex;
+    justify-content: center;
 }
-.hero{
-  background-color: #000;
+
+.github__menu {
+    display: flex;
+    align-items: center;
+}
+
+.svg {
+    padding: 0 5px;
+}
+
+.github__elem {
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.github__value {
+    padding: 0 5px;
+}
+
+.heading--medium {
+    font-size: 54px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #635C73;
+    padding: 20px 0;
+}
+
+.heading--sub {
+    font-size: 21px;
+    line-height: 32px;
+    padding: 15px 5px;
+    color: #323232;
+}
+
+.btn--github {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-right: 1px solid #d5d5d5;
 }
