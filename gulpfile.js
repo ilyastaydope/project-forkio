@@ -58,4 +58,5 @@ const build = gulp.series(
 gulp.task("clean", cleanBuild)
 gulp.task("buildCSS", buildCSS)
 gulp.task("buildJS", buildJS)
-gulp.task("default", gulp.series(cleanBuild, gulp.parallel(build)))
+gulp.task("buildIMG", buildIMG)
+gulp.task("default", gulp.series(gulp.parallel(build)))

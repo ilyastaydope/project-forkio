@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="build/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,34 +19,36 @@
     <div class="container">
         <div class="nav-wrapper">
             <nav class="nav">
-                <div class="logo-wrapper">
+                <a href="#" class="logo">
                     <div class="logo__icon-wrapper">
-                        <!-- svg -->
+                        <img class="icon--img" src="./build/img/icons/logo-pencil.png" alt="">
                     </div>
                     <h1 class="logo__name">Forkio</h1>
-                </div>
+                </a>
 
                 <ul class="nav__list">
                     <li class="nav__item">Overview</li>
                     <li class="nav__item">About Fork</li>
                     <li class="nav__item">Buying Options</li>
                     <li class="nav__item">Support</li>
-                    <li class="nav__item nav__item--">Buy Now</li>
+                    <button class="btn nav__item btn--buy">Buy Now</button>
                 </ul>
-                <button class="btn btn--buy">Buy Now</button>
             </nav>
+
         </div>
 
         <div class="hero__content">
             <h2 class="heading heading--big">Fork App</h2>
-            <p class="hero__title"></p>
-            <p class="hero__sub-title"></p>
+            <p class="hero__title">A real gamechanger in the world of web development</p>
+            <p class="hero__sub-title">v. 2.8 For Mac and Windows</p>
         </div>
     </div>
-    <div class="hero__bg">
-        <!--            <img src="build/img/backgrounds/header.png" alt="">-->
+    <div class="hero__bg"></div>
+    <div class="hero__button">
+        <button class="btn btn--download">Download For Free Now</button>
     </div>
 </header>
+<p class="btn__download-subtitle">Unlimited 30-Days Trial Period</p>
 
 </body>
 

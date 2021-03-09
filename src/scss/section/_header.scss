@@ -1,11 +1,155 @@
-.hero__bg{
- background-image: url("/build/img/backgrounds/header.png");
+.hero__bg {
+  background-image: url("/build/img/backgrounds/header.png");
   background-position: center center;
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero{
-  background-color: #000;
+
+.hero {
+  background-color: #000
+}
+
+.nav {
+  display: flex;
+  padding-top: 42px;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover .logo__name {
+      color: #ffffff;
+    }
+
+    &:hover .icon--img {
+      content: url("/build/img/icons/logo-pencil-hover.png");
+    }
+  }
+
+  .logo__name {
+    color: $color-violet;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 17px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    color: $color-violet;
+  }
+
+  &__item {
+    cursor: pointer;
+    margin-left: 48px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    &:hover {
+      color: #ffff;
+    }
+  }
+}
+
+.hero {
+  
+  &__content {
+    padding-top: 126px;
+  }
+
+  &__title {
+    padding-top: 19px;
+    color: $color-violet;
+    font-family: Lato, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__sub-title {
+    padding-top: 19px;
+    font-family: Montserrat, sans-serif;
+    color: #848E97;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  &__button {
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  }
+
+}
+
+.heading--big {
+  font-family: Montserrat;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82px;
+  text-align: center;
+
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: $color-violet;
+  box-shadow: inset 0 0 0 2px $color-violet;
+}
+
+.btn--buy {
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 40px;
+  background-color: $color-violet;
+}
+
+.btn--download {
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0 auto;
+  padding: 23px 61px;
+  background-color: $color-violet;
+  border-radius: 40px;
+}
+
+.btn__download-subtitle {
+  padding-top: 19px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: center;
 }
