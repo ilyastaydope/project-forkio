@@ -20,25 +20,25 @@ const paths = {
 }
 const buildJS = () => (
     gulp.src(paths.src.js)
-        .pipe(concat('script.js'))
-        .pipe(gulp.dest(paths.build.js))
-        .pipe(browserSync.stream())
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest(paths.build.js))
+    .pipe(browserSync.stream())
 )
 const buildCSS = () => (
     gulp.src(paths.src.scss)
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(paths.build.css))
-        .pipe(browserSync.stream())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(paths.build.css))
+    .pipe(browserSync.stream())
 )
 const buildIMG = () => (
     gulp.src(paths.src.img)
-        .pipe(imagemin())
-        .pipe(gulp.dest(paths.build.img))
-        .pipe(browserSync.stream())
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.build.img))
+    .pipe(browserSync.stream())
 )
 const cleanBuild = () => (
     gulp.src(paths.build.self, { allowEmpty: true })
-        .pipe(clean())
+    .pipe(clean())
 )
 const watcher = () => {
     browserSync.init({
@@ -55,6 +55,7 @@ const build = gulp.series(
     buildJS,
     watcher
 )
+
 gulp.task("clean", cleanBuild)
 gulp.task("buildCSS", buildCSS)
 gulp.task("buildJS", buildJS)
