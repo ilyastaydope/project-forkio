@@ -6,9 +6,13 @@
 
 .code-layout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 4fr 5fr;
     grid-template-areas: "list heading" "list img";
     grid-gap: 0 25px;
+}
+
+.code-layout-grig-img {
+    grid-area: heading;
 }
 
 .heading--code {
@@ -18,7 +22,6 @@
     font-size: 48px;
     line-height: 50px;
     color: $main-color;
-    grid-area: heading;
 }
 
 .code__list {
@@ -55,8 +58,14 @@
 
 .code__img-wrapper {
     flex: 1;
-    text-align: center;
     padding-right: 60px;
+    min-width: 90px;
+}
+
+.code__img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .code__item-content {
@@ -65,17 +74,10 @@
 
 .code__main__img-wrapper {
     grid-area: img;
-    background-image: url(../../../build/img/backgrounds/code.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    align-self: flex-start;
-}
-
-.code__img {
-    object-fit: contain;
 }
 
 .code__main__img {
-    object-fit: cover;
+    display: block;
+    object-fit: contain;
     width: 100%;
 }
