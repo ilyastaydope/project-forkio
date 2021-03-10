@@ -26,15 +26,17 @@
 
     &:hover .logo__name {
       color: #ffffff;
+      transition: 0.5s ;
     }
 
     &:hover .icon--img {
       content: url("/build/img/icons/logo-pencil-hover.png");
+      transition: 0.3s ;
     }
   }
 
   .logo__name {
-    color: $color-violet;
+    color: $main-color;
     font-family: Lato, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -43,15 +45,16 @@
     text-transform: uppercase;
     margin-left: 17px;
 
-    &:hover {
-      color: #fff;
-    }
+    //&:hover {
+    //  color: #fff;
+    //  transition: 0.3s ;
+    //}
   }
 
   &__list {
     display: flex;
     align-items: center;
-    color: $color-violet;
+    color: $main-color;
   }
 
   &__item {
@@ -67,19 +70,19 @@
 
     &:hover {
       color: #ffff;
+      transition: 0.6s ;
     }
   }
 }
 
 .hero {
-  
   &__content {
     padding-top: 126px;
   }
 
   &__title {
     padding-top: 19px;
-    color: $color-violet;
+    color: $main-color;
     font-family: Lato, sans-serif;
     font-size: 30px;
     font-weight: 400;
@@ -97,14 +100,13 @@
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
-
+    padding-bottom: 19px;
   }
 
   &__button {
-
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 50%);
+    display: flex;
   }
-
 }
 
 .heading--big {
@@ -114,14 +116,13 @@
   font-weight: 700;
   line-height: 82px;
   text-align: center;
-
 }
 
 .btn--buy {
   color: #fff;
   padding: 11px 20px;
   border-radius: 40px;
-  background-color: $color-violet;
+  background-color: $main-color;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -131,8 +132,8 @@
   text-align: left;
   &:hover{
     background-color: #ffffff;
-    color: $color-violet;
-    box-shadow: inset 0 0 0 2px $color-violet;
+    color: $main-color;
+    box-shadow: inset 0 0 0 2px $main-color;
   }
 }
 
@@ -145,16 +146,17 @@
   line-height: 22px;
   margin: 0 auto;
   padding: 23px 61px;
-  background-color: $color-violet;
+  background-color: $main-color;
   border-radius: 40px;
   &:hover{
     background-color: #ffffff;
-    color: $color-violet;
-    box-shadow: inset 0 0 0 2px $color-violet;
+    color: $main-color;
+    box-shadow: inset 0 0 0 2px $main-color;
   }
 }
 
 .btn__download-subtitle {
+  background-color: #fff;
   padding-top: 19px;
   font-family: Montserrat;
   font-size: 14px;
@@ -163,5 +165,5 @@
   line-height: 15px;
   letter-spacing: 0px;
   text-align: center;
-
 }
+
