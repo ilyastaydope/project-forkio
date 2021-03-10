@@ -13,6 +13,23 @@ body {
     text-align: center;
     color: #fff;
     font-style: normal;
+    &--code {
+        text-align: left;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 50px;
+        color: $main-color;
+    }
+    &--default {
+        padding: 20px 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;
+    }
 }
 
 .btn {
@@ -36,5 +53,19 @@ body {
         &:hover {
             background-color: #e8e8e8;
         }
+    }
+    &--purchase {
+        display: flex;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 15px 38px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 32px;
+        color: #fff;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
     }
 }
