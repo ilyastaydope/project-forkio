@@ -1,0 +1,103 @@
+.pricing-section {
+    background-image: url(../../../build/img/backgrounds/pricing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(4, 256px);
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.pricing__item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    &--recomended {
+        transform: scale(1.2, 1.3);
+    }
+}
+
+.pricing__item--recomended {
+    background-color: rgba(0, 0, 0, .11);
+    .pricing-item__heading {
+        background-color: rgba(0, 0, 0, .11);
+    }
+}
+
+.pric-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing-item__heading {
+    padding: 36px 0;
+    background-color: rgba(255, 255, 255, .06);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.pricing-item__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    &::after {
+        content: "";
+        display: block;
+        margin: 40px auto;
+        width: 60px;
+        height: 5px;
+        background-color: $main-color;
+    }
+}
+
+.pricing-item__price {
+    padding: 10px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &:before {
+        content: "$";
+        font-weight: normal;
+    }
+}
+
+.pricing-item__period {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pricing-item-kit__list {
+    padding: 20px 0;
+}
+
+.pricing-item-kit__item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
