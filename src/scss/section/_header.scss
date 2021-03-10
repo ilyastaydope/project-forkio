@@ -17,13 +17,14 @@
   padding-top: 42px;
   align-items: center;
   color: #fff;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    margin-right: auto;
 
     &:hover .logo__name {
       color: #ffffff;
@@ -56,6 +57,7 @@
     display: flex;
     align-items: center;
     color: $main-color;
+    padding-right: 48px;
   }
 
   &__item {
