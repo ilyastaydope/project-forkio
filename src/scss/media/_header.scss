@@ -52,5 +52,58 @@
     }
 
   }
+}
 
+@media (max-width: $mobile-width) {
+
+  .nav {
+    display: grid;
+    grid-template-areas: "logo btn hamburger";
+    grid-row-gap: 25px;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    padding-bottom: 43px;
+  }
+  .logo {
+    &__name {
+      display: none;
+    }
+  }
+
+  .nav {
+    &__list {
+      display: none;
+    }
+  }
+  .hamburger {
+    grid-area: hamburger;
+    display: flex;
+    flex-direction: column;
+  }
+  .line {
+    content: "";
+    width: 23px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 6px;
+    border-radius: 50px;
+  }
+  .line--short {
+    width: 15px;
+    margin-left: auto;
+  }
+  .hero {
+    &__bg {
+      height: 300px;
+    }
+  }
+  .btn--download{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    padding: 13px 29px;
+  }
 }
