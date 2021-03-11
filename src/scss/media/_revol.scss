@@ -1,0 +1,12 @@
+@media (max-width: $tablet-width) {
+    .revol-section {
+        padding: 50px 0;
+    }
+    .github__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .github__elem {
+        margin-bottom: 15px;
+    }
+}
