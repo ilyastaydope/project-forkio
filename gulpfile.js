@@ -55,6 +55,8 @@ const build = gulp.series(
     buildJS,
     watcher
 )
+var ghPages = require('gulp-gh-pages');
+gulp.task('deploy', function() { return gulp.src('./build/**/*').pipe(ghPages()); });
 
 gulp.task("clean", cleanBuild)
 gulp.task("buildCSS", buildCSS)
