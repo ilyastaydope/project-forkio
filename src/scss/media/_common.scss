@@ -7,8 +7,16 @@
 }
 
 @media (max-width: $mobile-width) {
-    .pricing__list {
-        padding: 10px 0;
-        grid-template-columns: repeat(1, 256px);
+    .heading--medium {
+        font-size: 26px;
+    }
+    .heading--code {
+        font-size: 34px;
+    }
+    .heading--default {
+        font-size: 34px;
+    }
+    .heading--sub {
+        font-size: 14px;
     }
 }

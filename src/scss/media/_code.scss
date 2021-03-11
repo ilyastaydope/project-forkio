@@ -19,4 +19,16 @@
     }
 }
 
-@media (max-width: $mobile-width) {}
+@media (max-width: $mobile-width) {
+    .code__item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .code__img-wrapper {
+        padding: 0;
+        padding-bottom: 25px;
+    }
+    .pricing__list {
+        grid-template-columns: repeat(1, 256px);
+    }
+}
