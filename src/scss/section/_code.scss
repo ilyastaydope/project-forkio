@@ -67,9 +67,13 @@
 
 .code__main__img-wrapper {
     grid-area: img;
+    position: relative;
+    top: 10px;
 }
 
 .code__main__img {
     display: block;
+    width: auto;
     object-fit: cover;
+    position: absolute;
 }
