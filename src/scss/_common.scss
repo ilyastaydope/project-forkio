@@ -13,30 +13,21 @@ body {
     text-align: center;
     color: #fff;
     font-style: normal;
-     &--code {
+    &--code {
         text-align: left;
-        font-style: normal;
-        font-weight: bold;
         font-size: 48px;
         line-height: 50px;
         color: $main-color;
     }
     &--default {
         padding: 20px 0;
-        font-style: normal;
-        font-weight: bold;
         font-size: 48px;
         line-height: 50px;
-        text-align: center;
-        color: #FFFFFF;
     }
     &--big {
-    font-size: 82px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 82px;
-    text-align: center;
-}
+        font-size: 82px;
+        line-height: 82px;
+    }
 }
 
 .btn {
@@ -54,8 +45,6 @@ body {
         padding: 11px 20px;
         border-radius: 40px;
         background-color: $main-color;
-        cursor: pointer;
-        font-family: Montserrat;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
@@ -70,7 +59,6 @@ body {
         }
     }
     &--download {
-        font-family: Montserrat;
         color: #fff;
         font-size: 21px;
         font-style: normal;
