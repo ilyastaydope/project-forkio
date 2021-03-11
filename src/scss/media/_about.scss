@@ -6,3 +6,25 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .about {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__title {
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    &__subtitle {
+      padding: 37px 0 0 0;
+    }
+  }
+
+}
