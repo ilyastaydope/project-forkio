@@ -7,6 +7,9 @@
 }
 
 @media (max-width: $mobile-width) {
+    .pricing-section {
+        padding: 0;
+    }
     .pricing__list {
         padding: 10px 0;
         grid-template-columns: repeat(1, 256px);
