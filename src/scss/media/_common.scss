@@ -1,39 +1,27 @@
 @media (max-width: $tablet-width) {
-
-
-  .heading--big {
-    font-size: 72px;
-    line-height: 72px;
-    text-align: center;
-  }
+    .heading--big {
+        font-size: 72px;
+        line-height: 72px;
+    }
 }
 
-
 @media (max-width: $mobile-width) {
-
-  .hero{
-    &__title{
-      font-family: Montserrat;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 24px;
-    
+    .hero {
+        &__title {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &__sub-title {
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
-    &__sub-title{
-      font-family: Montserrat;
-      font-size: 14px;
-      font-weight: 400;
-
+    .heading--big {
+        font-size: 48px;
+        line-height: 48px;
     }
-  }
-  
-   .heading--big {
-     font-family: Montserrat;
-    font-size: 48px;
-    line-height: 48px;
- 
-  }
-     .heading--medium {
+    .heading--medium {
         font-size: 26px;
     }
     .heading--code {

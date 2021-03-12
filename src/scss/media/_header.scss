@@ -1,109 +1,98 @@
 @media (max-width: $tablet-width) {
-  .nav {
-    padding: 42px 20px 0 20px;
-    display: grid;
-    grid-template-areas: "logo btn" "list list";
-    grid-row-gap: 25px;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: self-end;
-    background-color: #27262A;
-
-    &__list {
-      grid-area: list;
-      margin: 0 auto;
-      padding-bottom: 18px;
+    .nav {
+        padding: 42px 20px 0 20px;
+        display: grid;
+        grid-template-areas: "logo btn" "list list";
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: self-end;
+        background-color: #27262A;
+        &__list {
+            grid-area: list;
+            margin: 0 auto;
+            padding-bottom: 18px;
+        }
+        .logo {
+            grid-area: logo;
+        }
+        .nav .btn--buy {
+            grid-area: btn;
+        }
+        .hero {
+            &__bg {
+                height: 400px;
+            }
+            .heading--big {
+                font-size: 72px;
+                line-height: 72px;
+                text-align: center;
+            }
+            &__title {
+                font-family: Lato, sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+            &__sub-title {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                text-align: center;
+                padding: 100px 50px 0 50px;
+            }
+        }
     }
-
-    .logo {
-      grid-area: logo;
-    }
-
-    .nav .btn--buy {
-      grid-area: btn;
-    }
-
-    .hero {
-      &__bg {
-        height: 400px;
-      }
-
-      .heading--big {
-        font-size: 72px;
-        line-height: 72px;
-        text-align: center;
-      }
-
-      &__title {
-        font-family: Lato, sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: center;
-      }
-
-      &__sub-title {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 14px;
-        text-align: center;
-        padding: 100px 50px 0 50px;
-      }
-    }
-
-  }
 }
 
 @media (max-width: $mobile-width) {
-
-  .nav {
-    display: grid;
-    grid-template-areas: "logo btn hamburger";
-    grid-row-gap: 25px;
-    grid-template-columns: repeat(3, max-content);
-    justify-content: space-between;
-    padding-bottom: 43px;
-  }
-  .logo {
-    &__name {
-      display: none;
+    .nav {
+        display: grid;
+        grid-template-areas: "logo btn hamburger";
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-between;
+        padding-bottom: 43px;
     }
-  }
-
-  .nav {
-    &__list {
-      display: none;
+    .logo {
+        &__name {
+            display: none;
+        }
     }
-  }
-  .hamburger {
-    grid-area: hamburger;
-    display: flex;
-    flex-direction: column;
-  }
-  .line {
-    content: "";
-    width: 23px;
-    height: 2px;
-    background-color: #fff;
-    margin-top: 6px;
-    border-radius: 50px;
-  }
-  .line--short {
-    width: 15px;
-    margin-left: auto;
-  }
-  .hero {
-    &__bg {
-      height: 300px;
+    .nav {
+        &__list {
+            display: none;
+        }
     }
-  }
-  .btn--download{
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
-    padding: 13px 29px;
-  }
+    .hamburger {
+        grid-area: hamburger;
+        display: flex;
+        flex-direction: column;
+    }
+    .line {
+        content: "";
+        width: 23px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 6px;
+        border-radius: 50px;
+    }
+    .line--short {
+        width: 15px;
+        margin-left: auto;
+    }
+    .hero {
+        &__bg {
+            height: 300px;
+        }
+    }
+    .btn--download {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        padding: 13px 29px;
+    }
 }
