@@ -618,7 +618,7 @@ body {
     padding: 0;
     padding-bottom: 25px; }
   .pricing__list {
-    grid-template-columns: repeat(1, 256px); } }
+    grid-template-columns: repeat(1, minmax(1fr, 256px)); } }
 
 @media (max-width: 1199px) {
   .about__list {
