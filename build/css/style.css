@@ -146,6 +146,12 @@ body {
   .heading--big {
     font-size: 82px;
     line-height: 82px; }
+  .heading--medium {
+    font-size: 54px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #635c73;
+    padding: 20px 0; }
 
 .btn {
   font-family: 'Montserrat';
@@ -193,7 +199,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #f9f9f9;
-    padding: 5px;
+    padding: 5px 9px;
     font-size: 12px;
     border-right: 1px solid #d5d5d5; }
     .btn--github:hover {
@@ -237,12 +243,13 @@ body {
     cursor: pointer;
     margin-right: auto; }
     .nav .logo:hover .logo__name {
-      color: #ffffff;
-      transition: 0.5s; }
+      color: #ffffff; }
     .nav .logo:hover .logo__img {
-      content: url("/build/img/icons/logo-pencil-hover.png");
-      transition: 0.5s; }
+      fill: #fff; }
+  .nav .logo__img {
+    transition: .2s; }
   .nav .logo__name {
+    transition: .2s;
     color: #8D81AC;
     font-family: Lato, sans-serif;
     font-size: 24px;
@@ -310,50 +317,42 @@ body {
   text-align: center; }
 
 .revol-section {
-  padding: 100px 0; }
+  padding: 70px 0; }
 
-.revol__github {
-  display: flex;
-  justify-content: center; }
+.revol__heading {
+  font-size: 21px;
+  line-height: 32px;
+  padding: 15px 5px;
+  color: #323232;
+  text-align: center;
+  font-weight: 400;
+  font-family: Lato, sans-serif; }
 
 .github__menu {
   display: flex;
-  align-items: center; }
-
-.svg {
-  padding: 0 5px; }
+  justify-content: center; }
 
 .github__elem {
   overflow: hidden;
   border-radius: 3px;
   border: 1px solid #d5d5d5;
-  margin-right: 15px;
   display: flex;
   align-items: center;
   font-size: 16px; }
+  .github__elem:not(:last-child) {
+    margin-right: 15px; }
+
+.github__svg {
+  padding: 0 5px; }
 
 .github__value {
   font-weight: 700;
   font-size: 12px;
   padding: 0 9px; }
 
-.heading--medium {
-  font-size: 54px;
-  line-height: 54px;
-  text-transform: uppercase;
-  color: #635c73;
-  padding: 20px 0; }
-
-.heading--sub {
-  font-size: 21px;
-  line-height: 32px;
-  padding: 15px 5px;
-  color: #323232;
-  font-family: Lato, sans-serif; }
-
 .code-section {
   background-color: #f4f4f4;
-  padding: 100px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden; }
 
@@ -417,7 +416,7 @@ body {
   position: absolute; }
 
 .about-section {
-  background-image: url("/build/img/backgrounds/about.png");
+  background-image: url(../../build/img/backgrounds/about.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -471,16 +470,17 @@ body {
     margin-top: 18px; }
 
 .pricing-section {
-  background-image: url(../../../build/img/backgrounds/pricing.png);
+  background-image: url(../../build/img/backgrounds/pricing.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0; }
+  padding: 80px 0; }
 
 .pricing__list {
   display: grid;
-  grid-template-columns: repeat(4, 256px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  padding: 100px 0; }
+  padding: 70px 0;
+  grid-column-gap: 25px; }
 
 .pricing__item {
   text-align: center;
@@ -491,14 +491,14 @@ body {
   justify-content: space-between;
   padding-bottom: 40px; }
   .pricing__item--recomended {
-    transform: scale(1.15, 1.15); }
+    transform: scale(1.1, 1.1); }
 
 .pricing__item--recomended {
   background-color: rgba(0, 0, 0, 0.11); }
   .pricing__item--recomended .pricing-item__heading {
     background-color: rgba(0, 0, 0, 0.11); }
 
-.pric-wrap {
+.pricing-item-inner-wrappper {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -573,7 +573,6 @@ body {
     font-size: 14px;
     font-weight: 400; }
   .heading--big {
-    font-family: Montserrat;
     font-size: 48px;
     line-height: 48px; }
   .heading--medium {
