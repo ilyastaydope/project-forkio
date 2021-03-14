@@ -8,5 +8,9 @@ Number  |Member                  |github
 ## Github Pages 
 https://ilyastaydope.github.io/step-project-forkio/
 
-## NPM
+## Install
 npm i gulp -D gulp-browser-sync -D gulp-concat -D gulp-imagemin -D gulp-clean -D gulp-sass -D
+
+## Usage
+gulp build
+index.html
