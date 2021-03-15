@@ -38,6 +38,12 @@
     letter-spacing: 0px;
     text-align: left;
 
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $main-color;
+
     &:hover {
       color: #ffff;
       transition: $main-transition;
