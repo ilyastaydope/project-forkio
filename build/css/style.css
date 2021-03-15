@@ -251,7 +251,10 @@ body {
     line-height: 15px;
     letter-spacing: 0px;
     text-align: left; }
-    .nav__item:hover {
+  .nav__link {
+    text-decoration: none;
+    color: #8D81AC; }
+    .nav__link:hover {
       color: #ffff;
       transition: ease-in-out 0.3s; }
 
@@ -634,34 +637,6 @@ body {
     grid-row-gap: 25px;
     grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
-    padding-bottom: 43px; }
-  .logo__name {
-    display: none; }
-  .btn--buy {
-    grid-area: btn; }
-  .hero__bg {
-    height: 400px; }
-  .hero__title {
-    font-family: Lato, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0px;
-    text-align: center; }
-  .hero__sub-title {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-    text-align: center;
-    padding: 100px 50px 0 50px; } }
-
-@media (max-width: 767px) {
-  .nav {
-    display: grid;
-    grid-template-areas: "logo btn hamburger";
-    grid-row-gap: 25px;
-    grid-template-columns: repeat(3, max-content);
-    justify-content: space-between;
     padding-bottom: 43px;
     position: relative;
     margin: 0;
@@ -687,13 +662,13 @@ body {
     font-size: 26px;
     font-weight: 400;
     line-height: 26px;
-    color: white;
     margin: 0;
     position: relative; }
   .nav__link {
     padding: 10px 39px;
     display: block;
-    border-left: 8px solid transparent; }
+    border-left: 8px solid transparent;
+    color: white; }
   .nav__link:hover {
     border-left: 8px solid #8D81AC;
     color: #8D81AC; }
@@ -711,7 +686,7 @@ body {
     display: block;
     visibility: visible;
     opacity: 1; }
-  .hamburger {
+  .btn--hamburger {
     grid-area: hamburger;
     display: flex;
     flex-direction: column;
