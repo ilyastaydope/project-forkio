@@ -7,6 +7,8 @@ document.addEventListener('click', e => {
         navList.classList.toggle("visible");
         burger.classList.toggle("active");
     }
+    else {
     navList.classList.remove("visible");
     burger.classList.remove("active");
+    }
 })
