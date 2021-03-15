@@ -40,7 +40,7 @@
 
     &:hover {
       color: #ffff;
-      transition: 0.6s;
+      transition: $main-transition;
     }
   }
 }
@@ -54,12 +54,12 @@
 
   &:hover .logo__name {
     color: #ffffff;
-    transition: 0.5s;
+    transition: $main-transition;
   }
 
   &:hover .logo__img {
-    content: url("/build/img/icons/logo-pencil-hover.png");
-    transition: 0.5s;
+    fill: #ffffff;
+    transition: $main-transition;
   }
 }
 

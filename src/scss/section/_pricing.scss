@@ -1,15 +1,16 @@
 .pricing-section {
-    background-image: url(../../../build/img/backgrounds/pricing.png);
+    background-image: url(../../build/img/backgrounds/pricing.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .pricing__list {
     display: grid;
-    grid-template-columns: repeat(4, 256px);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 70px 0;
+    grid-column-gap: 25px;
 }
 
 .pricing__item {
@@ -21,7 +22,7 @@
     justify-content: space-between;
     padding-bottom: 40px;
     &--recomended {
-        transform: scale(1.15, 1.15);
+        transform: scale(1.1, 1.1);
     }
 }
 
@@ -32,7 +33,7 @@
     }
 }
 
-.pric-wrap {
+.pricing-item-inner-wrappper {
     height: 100%;
     display: flex;
     flex-direction: column;
