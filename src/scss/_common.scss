@@ -68,7 +68,7 @@ body {
         padding: 23px 61px;
         background-color: $main-color;
         border-radius: 40px;
-        transition: 0.6s;
+        transition: $main-transition;
         &:hover {
             background-color: #fff;
             color: $main-color;
