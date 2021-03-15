@@ -55,8 +55,8 @@
 
 .code__img-wrapper {
     flex: 1;
-    padding-right: 60px;
-    min-width: 90px;
+    padding-right: 30px;
+    min-width: 60px;
 }
 
 .code__img {
@@ -69,9 +69,11 @@
     grid-area: img;
     position: relative;
     top: 10px;
+    height: 500px;
 }
 
 .code__main__img {
+    height: 100%;
     object-fit: cover;
     position: absolute;
 }

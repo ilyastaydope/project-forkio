@@ -10,12 +10,7 @@
         padding: 50px 0 70px 0;
     }
     .code__main__img-wrapper {
-        height: 500px;
-    }
-    .pricing__list {
-        grid-template-columns: repeat(2, 256px);
-        justify-content: center;
-        grid-gap: 50px;
+        height: 450px;
     }
 }
 
@@ -28,7 +23,7 @@
         padding: 0;
         padding-bottom: 25px;
     }
-    .pricing__list {
-        grid-template-columns: repeat(1, minmax(1fr, 256px));
+    .code__main__img-wrapper {
+        height: 350px;
     }
 }
