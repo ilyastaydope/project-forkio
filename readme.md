@@ -9,8 +9,7 @@ Number  |Member                  |github
 https://ilyastaydope.github.io/step-project-forkio/
 
 ## Install
-npm i gulp -D gulp-browser-sync -D gulp-concat -D gulp-imagemin -D gulp-clean -D gulp-sass -D
+npm i gulp -D gulp-browser-sync -D gulp-concat -D gulp-imagemin -D gulp-clean -D gulp-sass -D gulp-clean-css -D gulp-autoprefixer -D gulp-rename -D gulp-uglify -D
 
 ## Usage
 gulp build
-index.html
