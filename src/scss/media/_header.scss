@@ -130,17 +130,17 @@
     }
     .btn--hamburger-active {
         .line:nth-child(1) {
+            width: 26px;
             top: 9px;
             transform: rotate(-45deg);
-            width: 26px;
         }
         .line:nth-child(2) {
             opacity: 0;
             transform: translate(-100%);
         }
         .line:nth-child(3) {
-            transform: rotate(45deg);
             top: 9px;
+            transform: rotate(45deg);
         }
     }
 }

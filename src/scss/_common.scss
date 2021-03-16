@@ -90,6 +90,7 @@ body {
         padding: 5px 9px;
         font-size: 12px;
         border-right: 1px solid #d5d5d5;
+        transition: $main-transition;
         &:hover {
             background-color: #e8e8e8;
         }
@@ -107,5 +108,9 @@ body {
         font-weight: normal;
         font-size: 15px;
         line-height: 15px;
+        transition: $main-transition;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
     }
 }
